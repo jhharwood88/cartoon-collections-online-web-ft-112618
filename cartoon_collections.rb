@@ -15,6 +15,7 @@ def summon_captain_planet(veg_array)
 end
 
 def long_planeteer_calls(element_values)
+<<<<<<< HEAD
   
   if
   element_values.any? { |x| x.size > 4}
@@ -23,6 +24,13 @@ def long_planeteer_calls(element_values)
   false
   end
   
+=======
+  i = 0
+  while i < element_values.length
+    return element_values[i] if yield(element_values[i])
+    i = i + 1
+  end
+>>>>>>> d9d020be7c76a2707eeb216323e05339beda12c6
 end
 
 def find_the_cheese(snacks)
